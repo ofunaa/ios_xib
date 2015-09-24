@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="13F1077" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="xibViewController">
+            <connections>
+                <outlet property="segueButton" destination="W60-rY-a5w" id="ncv-WD-b2c"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="400"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="psn-kF-hmW">
+                    <rect key="frame" x="0.0" y="0.0" width="200" height="400"/>
+                    <color key="backgroundColor" red="1" green="0.7343240456485014" blue="0.33051802573077849" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="DxV-Bg-5au"/>
+                    </constraints>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dkd-J3-0hp">
+                    <rect key="frame" x="200" y="0.0" width="200" height="400"/>
+                    <color key="backgroundColor" red="0.5324829296842416" green="0.81742364207835938" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="Z9d-KT-NzZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W60-rY-a5w">
+                    <rect key="frame" x="10" y="360" width="380" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.99530387755575545" blue="0.96188113460445612" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Button">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Dkd-J3-0hp" secondAttribute="trailing" id="0tO-0q-ho1"/>
+                <constraint firstItem="psn-kF-hmW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="2VN-3J-aqL"/>
+                <constraint firstItem="W60-rY-a5w" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="2oh-DJ-fxC"/>
+                <constraint firstItem="psn-kF-hmW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="DPK-BE-Szc"/>
+                <constraint firstItem="Dkd-J3-0hp" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="DZU-8Q-1Ch"/>
+                <constraint firstAttribute="bottom" secondItem="W60-rY-a5w" secondAttribute="bottom" constant="10" id="HSf-g5-Dps"/>
+                <constraint firstItem="psn-kF-hmW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Itw-1f-6JS"/>
+                <constraint firstAttribute="bottom" secondItem="psn-kF-hmW" secondAttribute="bottom" id="UOz-OQ-s9e"/>
+                <constraint firstAttribute="trailing" secondItem="W60-rY-a5w" secondAttribute="trailing" constant="10" id="bMK-rG-DWf"/>
+                <constraint firstAttribute="bottom" secondItem="Dkd-J3-0hp" secondAttribute="bottom" id="daX-g4-7pv"/>
+                <constraint firstAttribute="bottom" secondItem="psn-kF-hmW" secondAttribute="bottom" id="eDc-ze-EBk"/>
+                <constraint firstItem="psn-kF-hmW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="umC-c1-Dic"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="2VN-3J-aqL"/>
+                    <exclude reference="DPK-BE-Szc"/>
+                    <exclude reference="UOz-OQ-s9e"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

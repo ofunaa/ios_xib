@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  xibViewController.h
 //  xib2
 //
 //  Created by takuji funao on 2015/09/24.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface xibViewController : UIViewController
 
 @end
