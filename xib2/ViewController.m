@@ -24,6 +24,9 @@
     
     UIButton* button = (UIButton*)[self.view viewWithTag:1];
     
+    xibViewController* xib = [[xibViewController alloc] init];
+    NSLog(@"ここだよ%@", xib.description);
+    
     [button addTarget:self
                action:@selector(button_Tapped:)
      forControlEvents:UIControlEventTouchUpInside];

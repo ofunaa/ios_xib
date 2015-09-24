@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface xibViewController : UIViewController
+@interface xibViewController : UIViewController{
+    NSString* _description;
+}
+
+
+@property (nonatomic,retain)NSString* description;
 
 @end

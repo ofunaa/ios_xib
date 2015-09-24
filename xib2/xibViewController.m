@@ -10,15 +10,30 @@
 #import "ViewController.h"
 
 @interface xibViewController ()
+
 @property (weak, nonatomic) IBOutlet UIButton *segueButton;
+@property (weak, nonatomic) IBOutlet UITextView *otherClass;
+
 
 @end
 
 @implementation xibViewController
 
+@synthesize description;
+
+- (id)init {
+    self=[super init];
+    if (self) {
+        UITextView* left_textview = (UITextView*)[self.view viewWithTag:4];
+        description = left_textview.text;
+    }
+    return self;
+}
+
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSLog(@"ああああああああ");
     
     UITextView* left_textview = (UITextView*)[self.view viewWithTag:4];
     UITextView* right_textview = (UITextView*)[self.view viewWithTag:5];
